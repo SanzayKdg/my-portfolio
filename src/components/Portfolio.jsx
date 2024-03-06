@@ -38,7 +38,7 @@ const projects = [
       "A business directory website for businesses to showcase what they offer & for customers to easily find what they need. Businesses, big or small, can list their services. A simple solution to connect businesses with customers. Browse list of business select the business and visit business or add your own business.",
     tools: ["mongo", "react", "express", "node", "ts"],
 
-    demo__link: "#demo",
+    demo__link: "",
     code__link: "https://github.com/SanzayKdg/Business-Directory",
   },
 ];
@@ -155,28 +155,30 @@ const Portfolio = () => {
                 </div>
               </CardBody>
               <CardFooter className="sm:pt-1 md:pt-2 lg:pt-3 flex sm:flex-wrap md:flex-nowrap sm:justify-center md:justify-start gap-4">
-                <a className="sm:w-full md:w-fit" href={project.demo__link}>
-                  <Button
-                    size="lg"
-                    className="capitalize flex justify-center gap-2 items-center sm:w-full md:w-fit"
-                  >
-                    View Demo
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
+                {project.demo__link.length > 0 && (
+                  <a className="sm:w-full md:w-fit" href={project.demo__link}>
+                    <Button
+                      size="lg"
+                      className="capitalize flex justify-center gap-2 items-center sm:w-full md:w-fit"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                      />
-                    </svg>
-                  </Button>
-                </a>
+                      View Demo
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                        />
+                      </svg>
+                    </Button>
+                  </a>
+                )}
                 {project.code__link.length > 0 && (
                   <a href={project.code__link} className="sm:w-full md:w-fit">
                     <Button
