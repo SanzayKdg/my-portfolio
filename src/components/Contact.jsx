@@ -51,22 +51,6 @@ const Contact = () => {
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState({});
-  useEffect(() => {
-    const validateError = formValidate(
-      message.from_name,
-      message.from_email,
-      message.message
-    );
-    setError(validateError);
-
-    if (Object.keys(validateError).length > 0) {
-      return;
-    }
-
-    return () => {
-      setError({});
-    };
-  }, [message.from_name, message.from_email, message.message]);
 
   useEffect(() => {
     if (success) {
@@ -77,11 +61,18 @@ const Contact = () => {
       return () => clearTimeout(timer);
     }
   }, [success]);
-
   const submitHandler = async (e) => {
     e.preventDefault();
-
     try {
+      const validateError = formValidate(
+        message.from_name,
+        message.from_email,
+        message.message
+      );
+      setError(validateError);
+      if (Object.keys(validateError).length > 0) {
+        return;
+      }
       await emailjs.sendForm(
         "service_u92l7aa",
         "template_fnqkrlm",
