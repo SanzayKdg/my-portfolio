@@ -20,20 +20,17 @@ import { formValidate } from "../error/error";
 const Contact = () => {
   const contactRef = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-slideUp");
-            entry.target.classList.remove("animate-slideDown");
-          } else {
-            entry.target.classList.remove("animate-slideUp");
-            entry.target.classList.add("animate-slideDown");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideUp");
+          entry.target.classList.remove("animate-slideDown");
+        } else {
+          entry.target.classList.remove("animate-slideUp");
+          entry.target.classList.add("animate-slideDown");
+        }
+      });
+    });
 
     if (contactRef.current) {
       observer.observe(contactRef.current);

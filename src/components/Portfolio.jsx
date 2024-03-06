@@ -46,18 +46,17 @@ const projects = [
 const Portfolio = () => {
   const projectRef = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-slideUp");
-          } else {
-            entry.target.classList.remove("animate-slideUp");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideUp");
+          entry.target.classList.remove("animate-slideDown");
+        } else {
+          entry.target.classList.remove("animate-slideUp");
+          entry.target.classList.add("animate-slideDown");
+        }
+      });
+    });
 
     if (projectRef.current) {
       observer.observe(projectRef.current);
@@ -69,7 +68,7 @@ const Portfolio = () => {
     <section
       ref={projectRef}
       id="projects"
-      className="sm:mt-[4rem] xl:mt-[8rem] sm:px-[2rem] md:px[4rem] xl:px-[8rem]"
+      className="sm:mt-[4rem] xl:mt-[8rem] sm:px-[2rem] md:px[4rem] xl:px-[8rem] scroll-smooth"
     >
       <Typography variant="h1" className="text-3xl text-[#147EFB]">
         Portfolio

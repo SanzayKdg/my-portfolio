@@ -37,22 +37,23 @@ const About = () => {
   const educationeRef = useRef(null);
   const experienceRef = useRef(null);
   const techRef = useRef(null);
+  const aboutRef = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-slideUp");
-            entry.target.classList.remove("animate-slideDown");
-          } else {
-            entry.target.classList.remove("animate-slideUp");
-            entry.target.classList.add("animate-slideDown");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-slideUp");
+          entry.target.classList.remove("animate-slideDown");
+        } else {
+          entry.target.classList.remove("animate-slideUp");
+          entry.target.classList.add("animate-slideDown");
+        }
+      });
+    });
 
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
     if (educationeRef.current) {
       observer.observe(educationeRef.current);
     }
@@ -67,7 +68,7 @@ const About = () => {
   }, [educationeRef, experienceRef]);
 
   return (
-    <section id="about" className="sm:mt-[4rem] xl:mt-[8rem]">
+    <section ref={aboutRef} id="about" className="sm:mt-[4rem] xl:mt-[8rem]">
       <div className="sm:px-[2rem] md:px-[4rem] xl:px-[8rem]">
         <Typography variant="h1" className="text-3xl text-[#147EFB]">
           About Me
