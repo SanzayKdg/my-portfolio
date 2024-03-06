@@ -93,14 +93,6 @@ const About = () => {
             love using.
           </Typography>
         </div>
-
-        {/* <div>
-          <img
-            className="h-screen w-full rounded-lg  object-center"
-            src="/about.png"
-            alt="nature image"
-          />
-        </div> */}
       </div>
       <div
         ref={educationeRef}
@@ -273,7 +265,7 @@ const About = () => {
                   <CardBody className="sm:hidden md:flex md:gap-1 xl:flex-col justify-center items-center">
                     <Avatar
                       src={tech.src}
-                      alt="avatar"
+                      alt={tech.name}
                       variant="rounded"
                       className="sm:w-8 sm:h-8 sm:hidden md:block xl:w-12 xl:h-12 xxl:w-[58px] xxl:h-[58px]"
                     />

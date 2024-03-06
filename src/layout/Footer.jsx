@@ -1,12 +1,10 @@
 import { Typography } from "@material-tailwind/react";
 const currentYear = new Date(Date.now()).getFullYear();
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import TopButton from "./TopButton";
 
 const Footer = () => {
   return (
     <footer className="relative w-full sm:mt-[4rem] xl:mt-[8rem]">
-      <TopButton />
       <div className="mx-auto w-full">
         <div className="sm:px-[2rem] md:px-[4rem] xl:px-[8rem] flex w-full sm:flex-col  border-t border-blue-gray-50 py-4 xl:flex-row md:justify-between items-center">
           <Typography

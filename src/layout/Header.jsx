@@ -56,7 +56,7 @@ export default function Header() {
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none sm:px-[2rem] md:px-[4rem] xl:px-[8rem] p-2 ">
         <div className="flex items-center justify-between text-blue-gray-900 ">
           <div className="flex items-center gap-[2rem]">
-            <Avatar src="/logo/528logo.png" size="lg" />
+            <Avatar src="/logo/528logo.png" size="lg" alt="Profile Avatar" />
             <div className="mr-4 hidden lg:block">{navList}</div>
           </div>
           <div className="flex items-center gap-4">

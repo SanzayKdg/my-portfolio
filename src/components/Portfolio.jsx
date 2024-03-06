@@ -89,6 +89,7 @@ const Portfolio = () => {
                 <img
                   src={project.imgSrc}
                   className="w-full h-screen transform transition-transform duration-[10s] ease-in-out group-hover:-translate-y-full"
+                  alt="Project Image"
                 />
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
               </CardHeader>
