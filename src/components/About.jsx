@@ -204,6 +204,7 @@ const About = () => {
                 <a
                   href="https://lancemeup.com/"
                   className="text-[#147EFB] italic"
+                  target="_blank"
                 >
                   https://lancemeup.com/
                 </a>
@@ -260,6 +261,7 @@ const About = () => {
                 key={tech.name}
                 href={tech.link}
                 className="xl:hover:-translate-y-6 xl:transition-transform duration-300 ease-in-out xl:hover:scale-105"
+                target="_blank"
               >
                 <Card className="bg-[#261f220d] flex justify-center items-center sm:h-[5rem] sm:w-[5rem] md:h-16 md:w-40 xl:h-[8rem] xl:w-[10rem] xxxl:h-[10rem] xxxl:w-[12rem]">
                   <CardBody className="sm:hidden md:flex md:gap-1 xl:flex-col justify-center items-center">

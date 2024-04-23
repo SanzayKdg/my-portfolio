@@ -156,7 +156,11 @@ const Portfolio = () => {
               </CardBody>
               <CardFooter className="sm:pt-1 md:pt-2 lg:pt-3 flex sm:flex-wrap md:flex-nowrap sm:justify-center md:justify-start gap-4">
                 {project.demo__link.length > 0 && (
-                  <a className="sm:w-full md:w-fit" href={project.demo__link}>
+                  <a
+                    className="sm:w-full md:w-fit"
+                    target="_blank"
+                    href={project.demo__link}
+                  >
                     <Button
                       size="lg"
                       className="capitalize flex justify-center gap-2 items-center sm:w-full md:w-fit"
@@ -180,7 +184,11 @@ const Portfolio = () => {
                   </a>
                 )}
                 {project.code__link.length > 0 && (
-                  <a href={project.code__link} className="sm:w-full md:w-fit">
+                  <a
+                    href={project.code__link}
+                    target="_blank"
+                    className="sm:w-full md:w-fit"
+                  >
                     <Button
                       size="lg"
                       className="bg-[#261f221a] text-[#147EFB] capitalize flex justify-center gap-2 items-center sm:w-full md:w-fit"

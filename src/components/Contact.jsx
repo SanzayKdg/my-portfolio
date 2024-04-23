@@ -119,7 +119,12 @@ const Contact = () => {
                 <Typography variant="h5">Email</Typography>
               </TimelineHeader>
               <TimelineBody className="pb-8">
-                <Typography className="font-normal text-gray-600">
+                <Typography
+                  as="a"
+                  href="mailto:sanjaykhadgi9861@gmail.com"
+                  className="font-normal text-gray-600"
+                  target="_blank"
+                >
                   sanjaykhadgi9861@gmail.com
                 </Typography>
               </TimelineBody>
@@ -144,7 +149,12 @@ const Contact = () => {
                 <Typography variant="h5">Phone</Typography>
               </TimelineHeader>
               <TimelineBody className="pb-8">
-                <Typography className="font-normal text-gray-600">
+                <Typography
+                  as="a"
+                  href="tel:+977 9861365442"
+                  className="font-normal text-gray-600"
+                  target="_blank"
+                >
                   +977 9861365442
                 </Typography>
               </TimelineBody>
@@ -168,7 +178,12 @@ const Contact = () => {
                 <Typography variant="h5">Location</Typography>
               </TimelineHeader>
               <TimelineBody>
-                <Typography className="font-normal text-gray-600">
+                <Typography
+                  as="a"
+                  href="https://www.google.com/maps/place/Lalitpur,+Nepal/@27.6575387,85.2819521,12.25z/data=!4m5!3m4!1s0x39eb19d3cf18ca51:0xd10ec3d53656e18f!8m2!3d27.6575387!4d85.2819521"
+                  target="_blank"
+                  className="font-normal text-gray-600"
+                >
                   Lalitpur, Nepal
                 </Typography>
               </TimelineBody>

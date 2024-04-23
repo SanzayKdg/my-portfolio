@@ -55,25 +55,29 @@ export default function Header() {
     <nav className="fixed top-0 z-10 -m-6 mt-0 max-h-[768px] w-[calc(100%+48px)]">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none sm:px-[2rem] md:px-[4rem] xl:px-[8rem] p-2 ">
         <div className="flex items-center justify-between text-blue-gray-900 ">
-          <div className="flex items-center gap-[2rem]">
+          <a href="/" className="flex items-center gap-[2rem]">
             <Avatar src="/logo/528logo.png" size="lg" alt="Profile Avatar" />
             <div className="mr-4 hidden lg:block">{navList}</div>
-          </div>
+          </a>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-[1rem]">
               <div className="flex items-center gap-x-4">
                 <Typography
-                  as="p"
+                  as="a"
                   variant="small"
                   className="sm:hidden xl:flex p-1 text-[#147EFB] font-normal"
+                  href="mailto:sanjaykhadgi9861@gmail.com"
+                  target="_blank"
                 >
                   sanjaykhadgi9861@gmail.com
                 </Typography>
                 <Typography
-                  as="p"
+                  as="a"
                   variant="small"
                   color="blue-gray"
                   className="sm:hidden xl:flex p-1 font-normal"
+                  href="tel:+977 9861365442"
+                  target="_blank"
                 >
                   +977 9861365442
                 </Typography>
@@ -86,6 +90,7 @@ export default function Header() {
                   variant="small"
                   href="https://www.linkedin.com/in/sanjay-khadgi-243623242/"
                   color="blue-gray"
+                  target="_blank"
                   className="p-1 font-normal"
                 >
                   <FaLinkedin size={25} className="hover:text-[#261f22bf]" />
@@ -95,6 +100,7 @@ export default function Header() {
                   variant="small"
                   href="https://github.com/SanzayKdg"
                   color="blue-gray"
+                  target="_blank"
                   className="p-1 font-normal"
                 >
                   <FaGithub size={25} className="hover:text-[#261f22bf]" />
@@ -145,17 +151,21 @@ export default function Header() {
           <div className="xs:flex xs:flex-col justify-center items-center gap-[1rem]">
             <div className="xs:flex xs:flex-col justify-center items-center gap-x-4">
               <Typography
-                as="p"
+                as="a"
                 variant="small"
                 className="p-1 text-[#147EFB] font-normal"
+                href="mailto:sanjaykhadgi9861@gmail.com"
+                target="_blank"
               >
                 sanjaykhadgi9861@gmail.com
               </Typography>
               <Typography
-                as="p"
+                as="a"
                 variant="small"
                 color="blue-gray"
                 className="p-1 font-normal"
+                href="tel:+977 9861365442"
+                target="_blank"
               >
                 +977 9861365442
               </Typography>
@@ -168,6 +178,7 @@ export default function Header() {
                 href="https://www.linkedin.com/in/sanjay-khadgi-243623242/"
                 color="blue-gray"
                 className="p-1 font-normal"
+                target="_blank"
               >
                 <FaLinkedin size={25} className="hover:text-[#261f22bf]" />
               </Typography>
@@ -177,6 +188,7 @@ export default function Header() {
                 href="https://github.com/SanzayKdg"
                 color="blue-gray"
                 className="p-1 font-normal"
+                target="_blank"
               >
                 <FaGithub size={25} className="hover:text-[#261f22bf]" />
               </Typography>
