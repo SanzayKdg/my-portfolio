@@ -15,6 +15,7 @@ export default withMT({
       animation: {
         slideUp: "slideUp 0.5s ease-out",
         slideDown: "slideDown 0.5s ease-out",
+        bounceOnce: "bounceOnce 1s 2",
       },
       keyframes: {
         slideUp: {
@@ -35,6 +36,16 @@ export default withMT({
           "100%": {
             transform: "translateY(0)",
             opacity: 1,
+          },
+        },
+        bounceOnce: {
+          "0% , 100%": {
+            transform: "translateY(-25%)",
+            animationTimingFunction: "cubic-bezier(0.8,0,1,1)",
+          },
+          "50%": {
+            transform: "none",
+            animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
           },
         },
       },

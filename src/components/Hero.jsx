@@ -1,6 +1,6 @@
-import TypeWriter from "typewriter-effect";
-import { Typography, Button } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
 import { useEffect, useRef } from "react";
+import TypeWriter from "typewriter-effect";
 
 const Hero = () => {
   const heroText = useRef(null);
