@@ -225,7 +225,7 @@ const About = () => {
                 </span>
               </Typography>
             </TimelineHeader>
-            <TimelineBody className="pb-2">
+            <TimelineBody className="pb-6">
               <Typography
                 variant="small"
                 className="text-[#261f22] mt-4 bg-[#e4edf9] py-[5px] px-[15px] text-[15px] font-bold"
@@ -237,6 +237,35 @@ const About = () => {
                 className="font-normal text-gray-600 mt-4 text-[1rem]"
               >
                 Sukedhara, Kathmandu
+              </Typography>
+            </TimelineBody>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineConnector className="-mt-1" />
+            <TimelineHeader className="h-3">
+              <TimelineIcon className="p-2 border-[#CFD8DCCC] border-2 bg-white" />
+              <Typography
+                variant="h6"
+                className="leading-none text-[18px] font-bold"
+              >
+                Samsung Nepal{" "}
+                <span className="font-light">
+                  <i>- Samsung Experienced Consultant</i>
+                </span>
+              </Typography>
+            </TimelineHeader>
+            <TimelineBody className="pb-2">
+              <Typography
+                variant="small"
+                className="text-[#261f22] mt-4 bg-[#e4edf9] py-[5px] px-[15px] text-[15px] font-bold"
+              >
+                2017 Nov - 2023 Jan
+              </Typography>
+              <Typography
+                variant="small"
+                className="font-normal text-gray-600 mt-4 text-[1rem]"
+              >
+                Kathmandu, Nepal
               </Typography>
             </TimelineBody>
           </TimelineItem>
