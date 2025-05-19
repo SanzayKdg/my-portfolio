@@ -1,45 +1,42 @@
 import {
+  Button,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
-  Typography,
-  Button,
+  CardHeader,
   Tooltip,
+  Typography,
 } from "@material-tailwind/react";
-import { FaGithub, FaNodeJs } from "react-icons/fa";
-import { DiMongodb, DiReact } from "react-icons/di";
-import { SiExpress, SiMysql, SiTypescript } from "react-icons/si";
 import { useEffect, useRef } from "react";
+import { DiMongodb, DiReact } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiMysql, SiTypescript } from "react-icons/si";
 const projects = [
   {
-    name: "Royal Villa Resorts",
-    imgSrc: "/projects/rvr.png",
+    name: "The BlueScope Company Pvt Ltd.",
+    imgSrc: "/projects/bluescope.png",
     description:
-      "Royal Villa Resort is a landing page of a resort situated in Heart of Kathmandu. A hangout place and perfect gateway to escape from the hustle bustle of Kathmandu. You just need to sit back relax the nature view from the peak of our Royal Villa. A true experience of your stay from your home.",
+      "BlueScope Pvt Ltd. is a company that has diversified it's insvestments into various sectors including educational institutions, agriculture production, and courier services. The company has recognized the potential of these sectors and aims to create sustainable growth in each of them.",
     tools: ["mysql", "express", "react", "node", "ts"],
 
-    demo__link: "https://royalvillaresorts.com/",
-    code__link: "",
+    demo__link: "https://thebluescope.com/",
   },
   {
-    name: "Nepals Hospitality",
-    imgSrc: "/projects/hospitality.png",
+    name: "Yaarinaag Ghelung Phug Samrachhyan Samiti",
+    imgSrc: "/projects/yrgcp.png",
     description:
-      "Nepals Hospitality is a landing page of a resort situated in Heart of Kathmandu. A leading hospitality and tourism organization in Nepal. Promotes Nepal as a premier destination for hospitality and tourism, while also providing training and resource to enhance the skills of our human resources.",
+      "Yaarinaag Ghelung Phug Samrachhyan Samiti is an organization committed to the preservation and promotion of the sacred region of Temal, located in the Kavrepalanchok district of Nepal. Temal is a culturally significant area.",
     tools: ["mysql", "express", "react", "node", "ts"],
-    demo__link: "https://nepalshospitality.com/",
-    code__link: "",
+    demo__link: "https://ygpcc.org.np/",
   },
   {
-    name: "Business Directory",
-    imgSrc: "/projects/bhub.jpg",
+    name: "Shaili Fashion Store",
+    imgSrc: "/projects/shaili.png",
     description:
-      "A business directory website for businesses to showcase what they offer & for customers to easily find what they need. Businesses, big or small, can list their services. A simple solution to connect businesses with customers. Browse list of business select the business and visit business or add your own business.",
-    tools: ["mongo", "react", "express", "node", "ts"],
+      "At Shaili Fashion Store, we're all about making you feel amazing not just in your favorite outfits (though we're great at that too!). We understand your busy lifestyle, your ambitions, and your desire to look and feel your best every day. That's why we create clothing that's timeless.",
+    tools: ["mysql", "react", "express", "node", "ts"],
 
-    demo__link: "",
-    code__link: "https://github.com/SanzayKdg/Business-Directory",
+    demo__link: "https://shailistore.com/",
   },
 ];
 
@@ -165,7 +162,7 @@ const Portfolio = () => {
                       size="lg"
                       className="capitalize flex justify-center gap-2 items-center sm:w-full md:w-fit"
                     >
-                      View Demo
+                      View Project
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -183,9 +180,9 @@ const Portfolio = () => {
                     </Button>
                   </a>
                 )}
-                {project.code__link.length > 0 && (
+                {/* {project?.code__link && project.code__link.length > 0 && (
                   <a
-                    href={project.code__link}
+                    href={project?.code__link}
                     target="_blank"
                     className="sm:w-full md:w-fit"
                   >
@@ -197,7 +194,7 @@ const Portfolio = () => {
                       <FaGithub size={25} />
                     </Button>
                   </a>
-                )}
+                )} */}
               </CardFooter>
             </Card>
           ))}

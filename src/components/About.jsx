@@ -31,7 +31,7 @@ const techStacks = [
     link: "https://nodejs.org/docs/latest/api/",
   },
   { src: "/logo/nest.svg", name: "Nest.js", link: "https://docs.nestjs.com/" },
-  { src: "/logo/next.svg", name: "Next.js", link: "https://nextjs.org/docs" },
+  { src: "/logo/mysql.svg", name: "MySQL", link: "https://docs.nestjs.com/" },
 ];
 const About = () => {
   const educationeRef = useRef(null);
@@ -79,9 +79,9 @@ const About = () => {
             className="mt-[2rem] font-[400] sm:text-[1rem] lg:text-[18px]"
           >
             I&apos;m a Full Stack Developer with experience in tech stack like
-            MongoDB, Express.js, React.js, and Node.js, Next.js and Nest.js. I
+            MongoDB, Express.js, React.js, and Node.js, MySQL, and Nest.js. I
             specialize in making websites visually appealing with React and
-            handling data effectively with MongoDB.
+            handling data effectively with Node.js.
           </Typography>
           <Typography
             variant="lead"
@@ -121,7 +121,7 @@ const About = () => {
                 variant="small"
                 className="text-[#261f22] mt-4 bg-[#e4edf9] w-fit py-[5px] text-[15px] px-[15px] font-bold"
               >
-                2019 - Current
+                2019 - 2023
               </Typography>
               <Typography
                 variant="small"
@@ -178,6 +178,48 @@ const About = () => {
                 variant="h6"
                 className="leading-none text-[18px] font-bold"
               >
+                World Tech Pvt. Ltd{" "}
+                <span className="font-light">
+                  <i>- Full Stack Developer</i>
+                </span>
+              </Typography>
+            </TimelineHeader>
+            <TimelineBody className="pb-6">
+              <Typography
+                variant="small"
+                className="text-[#261f22] mt-4 bg-[#e4edf9] w-fit py-[5px] text-[15px] px-[15px] font-bold"
+              >
+                2024 Mar - 2025 Apr
+              </Typography>
+              <Typography
+                variant="small"
+                className="font-normal text-gray-600 mt-4 text-[1rem]"
+              >
+                Suryabinayak, Bhaktapur
+              </Typography>
+              <Typography
+                variant="small"
+                className="font-normal text-gray-600 mt-4 text-[1rem]"
+              >
+                <a
+                  href="https://wrldtec.com/"
+                  className="text-[#147EFB] italic"
+                  target="_blank"
+                >
+                  https://wrldtec.com/
+                </a>
+              </Typography>
+            </TimelineBody>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineConnector className="-mt-1" />
+            <TimelineHeader className="h-3">
+              <TimelineIcon className="p-2 border-[#CFD8DCCC] border-2 bg-white" />
+              <Typography
+                variant="h6"
+                className="leading-none text-[18px] font-bold"
+              >
                 Lanceme Up{" "}
                 <span className="font-light">
                   <i>- Intern</i>
@@ -211,6 +253,7 @@ const About = () => {
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector className="-mt-1" />
             <TimelineHeader className="h-3">
@@ -240,6 +283,7 @@ const About = () => {
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector className="-mt-1" />
             <TimelineHeader className="h-3">
