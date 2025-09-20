@@ -189,7 +189,7 @@ const About = () => {
                 variant="small"
                 className="text-[#261f22] mt-4 bg-[#e4edf9] w-fit py-[5px] text-[15px] px-[15px] font-bold"
               >
-                2024 Mar - 2025 Apr
+                2024 Mar - Present
               </Typography>
               <Typography
                 variant="small"
@@ -273,7 +273,7 @@ const About = () => {
                 variant="small"
                 className="text-[#261f22] mt-4 bg-[#e4edf9] py-[5px] px-[15px] text-[15px] font-bold"
               >
-                2023 Mar - 2023 May
+                2022 Nov - 2023 May
               </Typography>
               <Typography
                 variant="small"

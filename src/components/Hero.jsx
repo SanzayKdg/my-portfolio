@@ -57,11 +57,7 @@ const Hero = () => {
               autoStart: true,
               loop: true,
               delay: 100,
-              strings: [
-                "Full Stack Developer",
-                "MERN Stack Developer",
-                "Web Designer",
-              ],
+              strings: ["Full Stack Developer", "MERN Stack Developer"],
             }}
           />
         </Typography>
