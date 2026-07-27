@@ -20,7 +20,7 @@ const workExperience: WorkExperiencesType = [
   {
     company: "World Tech Pvt. Ltd",
     from: "2024 May",
-    to: "Present",
+    to: "2026 Mar",
     designation: "Full Stack Developer",
     address: "Suryabinayak, Bhaktapur",
     // link: "https://wrldtec.com/",
