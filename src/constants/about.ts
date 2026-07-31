@@ -8,12 +8,12 @@ const education: EducationsType = [
     degree: "Bachelor of Computer Application",
   },
 
-  {
-    title: "Mega Secondary School",
-    from: "2014",
-    to: "2016",
-    degree: "Management",
-  },
+  // {
+  //   title: "Mega Secondary School",
+  //   from: "2014",
+  //   to: "2016",
+  //   degree: "Management",
+  // },
 ];
 
 const workExperience: WorkExperiencesType = [
@@ -39,7 +39,7 @@ const workExperience: WorkExperiencesType = [
     company: "Just in Nepal",
     from: "2023 Mar",
     to: "2023 Jun",
-    designation: "Backend Intern",
+    designation: "Full Stack Developer",
     address: "Sukedhara, Kathmandu",
   },
 ];
