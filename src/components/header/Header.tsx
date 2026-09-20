@@ -50,7 +50,7 @@ const Header = () => {
             </a>
           </div>
 
-          {/* <MobileNav /> */}
+          <MobileNav />
         </div>
       </nav>
     </header>
