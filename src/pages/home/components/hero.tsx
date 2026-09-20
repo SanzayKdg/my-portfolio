@@ -1,8 +1,19 @@
-import { ArrowDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowDown, ArrowDownToLine, FileText, LayoutGrid } from "lucide-react";
 import { Link } from "react-router-dom";
 import TypeWriter from "typewriter-effect";
 
 const HeroSection = () => {
+  const handleDownloadResume = () => {
+    const resumeUrl = "/file/resume.pdf";
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Rsesume-Sanjay Khadgi.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="#"
@@ -31,12 +42,23 @@ const HeroSection = () => {
         </p>
       </div>
 
-      <Link
-        to="#projects"
-        className="w-full px-4 py-3 h-12 max-w-sm rounded-full bg-primary flex items-center gap-2 text-primary-foreground justify-center"
-      >
-        See My Projects <ArrowDown className="size-4 md:size-5" />
-      </Link>
+      <div className="w-full justify-center flex flex-col md:flex-row items-center gap-4 md:gap-8">
+        <Button
+          className="flex-1 w-full px-4 py-3 h-12 max-w-sm rounded-full bg-primary border-primary border flex items-center gap-2 justify-center hover:bg-primary/80 text-primary-foreground cursor-pointer font-semibold"
+          onClick={handleDownloadResume}
+        >
+          <FileText className="size-4 md:size-5" /> Download Resume{" "}
+          <ArrowDownToLine className="size-4 md:size-5" />
+        </Button>
+
+        <Link
+          to="#projects"
+          className="flex-1 w-full px-4 py-3 h-12 max-w-sm rounded-full bg-primary-foreground border-primary border flex items-center gap-2 text-primary justify-center hover:bg-primary-foreground/80"
+        >
+          <LayoutGrid className="size-4 md:size-5" /> See My Projects{" "}
+          <ArrowDown className="size-4 md:size-5" />
+        </Link>
+      </div>
     </section>
   );
 };

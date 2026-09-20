@@ -8,9 +8,25 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Contact, Info, LayoutGrid, Mail, Menu, Phone } from "lucide-react";
+import {
+  Contact,
+  FileText,
+  House,
+  Info,
+  LayoutGrid,
+  Mail,
+  Menu,
+  Phone,
+} from "lucide-react";
 import { Link } from "react-router-dom";
-const MobileNav = () => {
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
+import { Button } from "../ui/button";
+const MobileNav2 = () => {
   return (
     <div className="flex items-center gap-4 lg:hidden">
       <div className="w-px h-8 lg:h-10 bg-muted-foreground/70" />
@@ -63,6 +79,91 @@ const MobileNav = () => {
         </SheetContent>
       </Sheet>
     </div>
+  );
+};
+
+const MobileNav = () => {
+  return (
+    <TooltipProvider>
+      <div className="w-full sticky bottom-0 left-0 right-0 z-20! h-20 bg-primary-foreground border border-red-500 flex lg:hidden justify-between ">
+        {/* left - (Home, About) Icons */}
+        <div className="flex-[0.6] flex justify-evenly w-full">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link to="/" className="flex items-center">
+                <Button variant="ghost" size="icon">
+                  <House className="size-6" />
+                </Button>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Home</p>
+            </TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link to="#about" className="flex items-center">
+                <Button variant="ghost" size="icon">
+                  <Info className="size-6" />
+                </Button>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>About</p>
+            </TooltipContent>
+          </Tooltip>
+        </div>
+
+        {/* mid - (Resume) Icon */}
+        <div className="flex-[0.2] flex w-full items-center">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link to="#projects" className="flex items-center">
+                <Button
+                  size="icon-lg"
+                  className="cursor-pointer size-15 rounded-full"
+                >
+                  <FileText className="size-8 stroke-1" />
+                </Button>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Download Resume</p>
+            </TooltipContent>
+          </Tooltip>
+        </div>
+
+        {/* right - (Project, Contact) Icons */}
+        <div className="flex-[0.6] justify-evenly flex w-full">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link to="#projects" className="flex items-center">
+                <Button variant="ghost" size="icon">
+                  <LayoutGrid className="size-6" />
+                </Button>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Project</p>
+            </TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link to="#contact" className="flex items-center">
+                <Button variant="ghost" size="icon">
+                  <Contact className="size-6" />
+                </Button>
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Contact</p>
+            </TooltipContent>
+          </Tooltip>
+        </div>
+      </div>
+    </TooltipProvider>
   );
 };
 

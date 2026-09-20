@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Card,
   CardContent,
@@ -23,7 +22,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 const ContactSection = () => {
   return (
-    <section id="about" className="font-inter flex flex-col gap-5 lg:gap-10">
+    <section id="contact" className="font-inter flex flex-col gap-5 lg:gap-10">
       <div className="grid gap-4">
         <h2 className="text-[clamp(1.5rem,4vw,2rem)] tracking-[-2%] font-montserrat font-semibold">
           Contact Me

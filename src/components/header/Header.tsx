@@ -1,13 +1,13 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Link } from "react-router-dom";
 import { Icons } from "../icons/icons";
 import { Button } from "../ui/button";
 import DarkModeToggler from "./DarkModeToggler";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <header className="border-b border-primary/20 shadow-sm px-6 lg:px-8 py-3 transition-all ease-in-out duration-300">
+    <header className="sticky top-0 z-10 bg-primary-foreground border-b border-primary/20 shadow-sm px-6 lg:px-8 py-3 transition-all ease-in-out duration-300">
       <nav className="font-inter flex justify-between items-center">
         <div className="flex gap-4 items-center grow mr-4">
           <Link to="#">
@@ -50,7 +50,7 @@ const Header = () => {
             </a>
           </div>
 
-          <MobileNav />
+          {/* <MobileNav /> */}
         </div>
       </nav>
     </header>
