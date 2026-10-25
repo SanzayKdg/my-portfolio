@@ -10,27 +10,19 @@ const projects: ProjectsType = [
   {
     name: "Swift Remit",
     image: "/projects/eagle.png",
-    link: "https://swiftremitglobal.com/",
+    link: "https://swiftremitglobal.wrldtec.com/",
   },
 
   {
     name: "Swift Remit - User",
     image: "/projects/user-swift.png",
-    link: "https://testuser.swiftremitglobal.com/",
-    credentials: {
-      email: "bakole2867@3dboxer.com",
-      password: "Admin@123",
-    },
+    link: "https://user.swiftremitglobal.wrldtec.com/",
   },
 
   {
     name: "Swift Remit - Admin",
     image: "/projects/admin-swift.png",
-    link: "https://testadmin.swiftremitglobal.com/",
-    credentials: {
-      email: "bakole2867@3dboxer.com",
-      password: "Admin@123",
-    },
+    link: "https://admin.swiftremitglobal.wrldtec.com/",
   },
 
   {
@@ -48,7 +40,7 @@ const projects: ProjectsType = [
   {
     name: "Coffee Square & Pizza",
     image: "/projects/coffee.png",
-    link: "https://coffeesquarenpizza.com.au.wrldtec.com/",
+    link: "https://coffeesquarenpizza.wrldtec.com/",
   },
 
   {
